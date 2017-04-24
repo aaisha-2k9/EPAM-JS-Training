@@ -1,0 +1,11 @@
+function getMiddle(s)
+{
+ var MiddleChar, InputString;  			
+			if (s.length % 2 == 0) {
+				MiddleChar = s.substring((s.length / 2) - 1, (s.length / 2) + 1);
+			}
+			else if (s.length % 2 == 1) {
+				MiddleChar = s.charAt(s.length / 2);
+			}
+      return MiddleChar;
+}
