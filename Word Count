@@ -1,8 +1,7 @@
 function countWords(str) {
- var WordsCount = 0;
- if (str.trim() != '')
- {
-			WordsCount = str.trim().match(/[\S\d]+/gi).length;
-      }
-      return WordsCount;
+	var Wordscount = 0;
+	if (str.trim() != '') {
+		Wordscount = str.match(/[\S\d]+/gi).length;
+	}
+	return Wordscount;
 }
