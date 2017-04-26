@@ -1,9 +1,9 @@
 function getMiddle(s)	{
   var Middlechar, Inputstringlength; 
   Inputstringlength = s.length;
-	if (Inputstringlength % 2 == 0)
-	  	Middlechar = s.substring((Inputstringlength / 2) - 1, (Inputstringlength/ 2) + 1);
-	else if (s.length % 2 == 1)
-			Middlechar = s.charAt(s.length / 2);
+  if (Inputstringlength % 2 == 0)
+     Middlechar = s.substring((Inputstringlength / 2) - 1, (Inputstringlength/ 2) + 1);
+  else if (s.length % 2 == 1)
+     Middlechar = s.charAt(s.length / 2);
   return Middlechar;
 }
