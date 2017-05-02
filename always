@@ -1,0 +1,4 @@
+function always (n) {
+var ReturnCode = n;
+return function(){return ReturnCode;}
+}
