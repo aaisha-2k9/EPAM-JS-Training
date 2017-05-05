@@ -1,0 +1,50 @@
+function zero(func) {
+return NewNumber(0, func);
+}
+function one(func) {
+return NewNumber(1, func);
+}
+function two(func) {
+return NewNumber(2, func);
+}
+function three(func) {
+return NewNumber(3, func);
+}
+function four(func) {
+return NewNumber(4, func);
+}
+function five(func) {
+return NewNumber(5, func);
+}
+function six(func) {
+return NewNumber(6, func);
+}
+function seven(func) {
+return NewNumber(7, func);
+}
+function eight(func) {
+return NewNumber(8, func);
+}
+function nine(func) {
+return NewNumber(9, func);
+}
+
+function plus(num1) {
+return function(num2){ return num2 + num1 ; }
+}
+function minus(num1) {
+return function(num2){ return num2 - num1 ; }
+}
+function times(num1) {
+return function(num2){ return num2 * num1 ; }
+}
+function dividedBy(num1) {
+return function(num2){ return num2 / num1 ; }
+}
+
+function NewNumber(num, func){
+if(!func)
+return num;
+else
+return func(num);
+}
