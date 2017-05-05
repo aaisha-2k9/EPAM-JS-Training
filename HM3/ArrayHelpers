@@ -1,0 +1,53 @@
+
+Array.prototype.square = function() {
+	newArray= new Array();
+    for (index=0; index< this.length; index ++) {
+    newArray[index] = Math.pow(this[index], 2);
+   }
+   return newArray;       
+}
+
+Array.prototype.cube = function() {
+   newArray= new Array();
+   for (index=0; index< this.length; index ++) {
+   newArray[index] = Math.pow(this[index], 3);
+   }
+   return newArray;       
+}
+
+Array.prototype.sum = function() {
+    newArray= new Array();
+    var sum=0;
+    for (index=0; index< this.length; index ++){
+    sum += this[index];
+   }
+   return sum;       
+}
+
+Array.prototype.average = function() {
+    newArray= new Array();
+    var Average = 0;
+    var Sum=0;
+    for (index=0; index< this.length; index ++) {
+    Sum += this[index];
+   }
+   return Sum/this.length;    
+}
+
+Array.prototype.even = function() {
+    var EvenArray = new Array();
+    this.forEach(function (self) {
+        if (self % 2 ==0)
+            EvenArray.push(self); 
+    });
+    return EvenArray; 
+}
+
+Array.prototype.odd = function() {
+    OddArray = new Array();
+    this.forEach(function (self) {
+        if (self % 2)
+            OddArray.push(self); 
+    });    
+    return OddArray;
+}
