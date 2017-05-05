@@ -1,7 +1,0 @@
-function add(n){
-  var ReturnValue =  function(m) {
-    return add(n+m);
-  };
-  ReturnValue.valueOf= function(){return n;}
-  return ReturnValue;
-}
