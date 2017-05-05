@@ -1,7 +1,0 @@
-function countWords(str) {
-   var Wordscount = 0;
-   if (str.trim() != '') {
-       Wordscount = str.match(/[\S\d]+/gi).length;
-   }
-   return Wordscount;
-}
