@@ -1,4 +1,4 @@
-function getMiddle(s)	{
+function getMiddle(s) {
   var Middlechar, Inputstringlength; 
   Inputstringlength = s.length;
   if (Inputstringlength % 2 == 0)
