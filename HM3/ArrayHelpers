@@ -1,6 +1,5 @@
-
 Array.prototype.square = function() {
-	newArray= new Array();
+    newArray= new Array();
     for (index=0; index< this.length; index ++) {
     newArray[index] = Math.pow(this[index], 2);
    }
@@ -26,7 +25,6 @@ Array.prototype.sum = function() {
 
 Array.prototype.average = function() {
     newArray= new Array();
-    var Average = 0;
     var Sum=0;
     for (index=0; index< this.length; index ++) {
     Sum += this[index];
