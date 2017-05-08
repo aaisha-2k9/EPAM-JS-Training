@@ -1,0 +1,15 @@
+Object.prototype.hash = function(string) {
+	if (!this){
+		return undefined;
+	}
+	let ObjProperty = string.split(".");
+	var FinalObject = this;
+	for (var i=0; i<ObjProperty.length; i++) {
+		if (FinalObject.hasOwnProperty(ObjProperty[i])){
+			FinalObject = FinalObject[ObjProperty[i]];
+		}
+		else 
+			return undefined;
+	}
+	return FinalObject;
+}
